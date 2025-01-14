@@ -1,0 +1,77 @@
+:root {
+    --printboard-font-size: 17px;
+
+    --clr1-300-hsl: 225 73% 55%;
+    --clr1-500-hsl: 225 73% 45%;
+    --clr1-700-hsl: 225 73% 30%;
+    --clr1-300: hsl(var(--clr1-300-hsl));
+    --clr1-500: hsl(var(--clr1-500-hsl));
+    --clr1-700: hsl(var(--clr1-700-hsl));
+
+    --clr2-300-hsl: 9 100% 60%;
+    --clr2-500-hsl: 9 100% 50%;
+    --clr2-700-hsl: 9 100% 35%;
+    --clr2-300: hsl(var(--clr2-300-hsl));
+    --clr2-500: hsl(var(--clr2-500-hsl));
+    --clr2-700: hsl(var(--clr2-700-hsl));
+
+    --clr-neutral-light-hsl: 0 0% 95%;
+    --clr-neutral-100-hsl: 0 0% 90%;
+    --clr-neutral-200-hsl: 0 0% 80%;
+    --clr-neutral-300-hsl: 0 0% 30%;
+    --clr-neutral-500-hsl: 0 0% 16%;
+    --clr-neutral-700-hsl: 0 0% 10%;
+    --clr-neutral-dark-hsl: 0 0% 5%;
+
+    --clr-neutral-light: hsl(var(--clr-neutral-light-hsl));
+    --clr-neutral-100: hsl(var(--clr-neutral-100-hsl));
+    --clr-neutral-200: hsl(var(--clr-neutral-200-hsl));
+    --clr-neutral-300: hsl(var(--clr-neutral-300-hsl));
+    --clr-neutral-500: hsl(var(--clr-neutral-500-hsl));
+    --clr-neutral-700: hsl(var(--clr-neutral-700-hsl));
+    --clr-neutral-dark: hsl(var(--clr-neutral-dark-hsl));
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+body.dark {
+    background-color: var(--clr-neutral-500);
+    color: #E3E3E3;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 5em;
+}
+
+button {
+    cursor: pointer;
+    padding: 1em 2em;
+    border: none;
+
+    &.dark {
+        background-color: var(--clr-neutral-500);
+        color: #E3E3E3;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+
+
+}
+
+h1 {
+    text-align: center;
+}
