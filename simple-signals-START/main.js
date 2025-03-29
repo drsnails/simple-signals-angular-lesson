@@ -1,9 +1,6 @@
-var gEffectStack = []
+'use strict'
 
 
-function signal(initialVal) {
-
-}
 
 
 
@@ -20,6 +17,7 @@ function onToggleDark() {
 
 
 ////////////////////////////////////////////////////
+
 function getRandomColor() {
     const chars = '0123456789ABCDEF'
     let color = '#'
