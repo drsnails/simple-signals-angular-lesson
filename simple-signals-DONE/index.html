@@ -8,14 +8,18 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
-	<body onload1="onInit()" class="dark">
-        <section class="btns">
-            <button onclick="onIncrease()">Increase</button>
-            <button class="dark-btn" onclick="onToggleDark(this)">Toggle Dark</button>
-        </section>
-        <h1 class="count"></h1>
-        <h1 class="dark"></h1>
+	<body onload1="onInit()">
+		<section class="btns">
+			<button onclick="onIncrease()">Increase</button>
+			<button class="dark-btn" onclick="onToggleDark(this)"></button>
+		</section>
+		<h1 class="count">count = <span></span></h1>
+		<div>
+			<h1 class="count-squared">count ** 2 = <span></span></h1>
+		</div>
+		<h1 class="dark"></h1>
 
-		<script src="main.js"></script>
+		<script src="js/signals.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

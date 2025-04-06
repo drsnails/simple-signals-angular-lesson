@@ -7,9 +7,3 @@ function signal(initialVal) {
 
 }
 
-
-function effect(effectFn) {
-    
-
-}
-
